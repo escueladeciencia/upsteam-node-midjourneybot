@@ -50,9 +50,13 @@ module.exports = {
                 "Message Id": message.id,
                 "Member Id": member.user.id,
                 "Username": member.user.username,
-                "URL": message.attachments.first().url,
                 "Prompt": message.content.match(/(\*\*)(.+)(\*\*)/i)[2],
                 "Votes": 0,
+                "Image": [
+                    {
+                      "url": message.attachments.first().url
+                    }
+                  ],
                 ...(member.nickname) && { "Nickname": member.nickname },
               }
             }
