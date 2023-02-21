@@ -51,7 +51,7 @@ module.exports = {
                 "Member Id": member.user.id,
                 "Username": member.user.username,
                 "Prompt": message.content.match(/(\*\*)(.+)(\*\*)/i)[2],
-                "Votes": 0,
+                "Votes": 1,
                 "Image": [
                     {
                       "url": message.attachments.first().url
