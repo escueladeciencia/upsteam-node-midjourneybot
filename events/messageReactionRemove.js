@@ -20,6 +20,9 @@ module.exports = {
             }
         }
 
+        // Discord non-midjourney messages
+        if (reaction.author.id != process.env.MIDJOURNEY_ID) return;
+
         // Discord bot reactions
         if (user.bot == true) return;
 
