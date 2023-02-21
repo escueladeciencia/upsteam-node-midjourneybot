@@ -40,8 +40,8 @@ module.exports = {
         // Discord non 😍 reactions
         if (reaction._emoji.name != '😍') return;
 
-        // Get 😍 count and remove bot base vote
-        const count = reaction.count - 1;
+        // Get 😍 count
+        const count = reaction.count;
 
         // Retrieve record id from Airtable from message id
         await base('Midjourney Voter').select({
