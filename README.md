@@ -10,6 +10,8 @@ Please, check a [live example](https://upsteam.es/midjourney) in action. The lis
 
 This tool has been designed for the spanish hackathon [Up! Steam](https://upsteam.es/), which is focused on encouraging teaching-learning STEAM disciplines (Science, Technology, Arts, Engineering and Mathematics) to 10-16yo kids in Comunidad Valenciana (Spain).
 
+![Example emoji reaction](images/astronaut.png)
+
 ## Instructions
 
 Here is the outline of the steps to install and run the bot. If you need extra help following these, feel free to join the Up! Steam Discord server and ask for help.
