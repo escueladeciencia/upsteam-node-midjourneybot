@@ -47,12 +47,12 @@ module.exports = {
         await base('Midjourney Voter').select({
             // Selecting the first 3 records in Grid view:
             maxRecords: 1,
-            view: "Grid view",
+            view: "Records",
             filterByFormula: `{Message Id} = "${reaction.message.id}"`
-        }).eachPage(function page(records, fetchNextPage) {
+        }).eachPage(async function page(records, fetchNextPage) {
             // This function (`page`) will get called for each page of records.
             if (records.length == 1) {
-                base('Midjourney Voter').update(records[0].id, {
+                await base('Midjourney Voter').update(records[0].id, {
                     "Votes": count
                   }, function(err, record) {
                     if (err) {
